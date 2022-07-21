@@ -1,0 +1,19 @@
+Route::get('/resetpass',function(){
+    return view('components.user.resetpass');
+});
+
+Route::post('resetphone',[forgotpassword::class,'resetphone'])->name('resetphone');
+
+Route::post('resetpassword',[forgotpassword::class,'resetpassword']);
+
+Route::post('updatepassword',[forgotpassword::class,'updatepassword']);
+
+
+
+
+""""read me""""
+ paste those routes in web.php
+
+
+replace the forgotpassword.php on forgotpassword.php controller  and make a component under user/resetpass.blade.php and replace the
+ resetpass.blade.php on that component.
